@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gael Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
+    <header>
+        <div class="header-left">
+            <a href="#" class="btn-inicio">Inicio</a>
+        </div>
+        <nav>
+            <a href="#productos">Productos</a>
+            <a href="#combos">Combos y Ofertas</a>
+            <a href="#carrito">Carrito</a>
+            <a href="#contacto">Mensajería</a>
+            <a href="#inventario">Inventario</a>
+            <a href="#trabajadores">Personal</a>
+        </nav>
+        <div class="user-badge">
+            <a href="#registro-seccion" class="btn-alert">Registro</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECCIÓN DE INICIO (SOLO NOMBRE Y DESCRIPCIÓN) -->
+        <section id="inicio-shop" class="inicio-unica">
+            <h1>Gael Shop</h1>
+            <p>Bienvenido a nuestra tienda virtual oficial. Aquí encontrarás los mejores productos con total transparencia de precios en CUP y USD, control de inventario en tiempo real y atención personalizada para cada uno de tus pedidos.</p>
+        </section>
+
+        <!-- SECCIÓN DE REGISTRO INDEPENDIENTE -->
+        <section id="registro-seccion" class="seccion-independiente form-container">
+            <h2>Registro de Usuario (Primera Vez)</h2>
+            <form action="#" method="POST">
+                <label>Nombre Completo:</label>
+                <input type="text" required placeholder="Ej. Juan Pérez">
+                <label>Número de Teléfono:</label>
+                <input type="tel" required placeholder="Ej. +535XXXXXXX">
+                <button type="submit" class="btn-main">Registrarse e Iniciar Sesión</button>
+            </form>
+        </section>
+
+        <!-- SECCIÓN PRODUCTOS INDEPENDIENTE (CON TUS 8 PRODUCTOS) -->
+        <section id="productos" class="seccion-independiente">
+            <h2>Nuestros Productos</h2>
+            <div class="grid-productos">
+                
+                <!-- 1. Detergente en polvo de 250g -->
+                <div class="card">
+                    <img src="fotos/detergente250.jpg" alt="Detergente en polvo de 250g" class="prod-img">
+                    <h3>Detergente en polvo (250g)</h3>
+                    <p>Detergente de alta calidad ideal para el lavado eficaz de todo tipo de ropa.</p>
+                    <p class="precio">Precio: 400 CUP</p>
+                    <p class="stock in">Disponibles</p>
+                    <a href="#carrito" class="btn-shop">Añadir al Carrito</a>
+                </div>
+
+                <!-- 2. Detergente en polvo de 500g -->
+                <div class="card">
+                    <img src="fotos/detergente500.jpg" alt="Detergente en polvo de 500g" class="prod-img">
+                    <h3>Detergente en polvo (500g)</h3>
+                    <p>Rendimiento superior para el hogar. Remueve manchas difíciles con facilidad.</p>
+                    <p class="precio">Precio: 700 CUP</p>
+                    <p class="stock in">Disponibles</p>
+                    <a href="#carrito" class="btn-shop">Añadir al Carrito</a>
+                </div>
+
+                <!-- 3. Detergente en polvo de 400g -->
+                <div class="card">
+                    <img src="fotos/detergente400.jpg" alt="Detergente en polvo de 400g" class="prod-img">
+                    <h3>Detergente en polvo (400g)</h3>
+                    <p>Formato mediano con gran poder de limpieza y aroma fresco de larga duración.</p>
+                    <p class="precio">Precio: 650 CUP</p>
+                    <p class="stock in">Disponibles</p>
+                    <a href="#carrito" class="btn-shop">Añadir al Carrito</a>
+                </div>
+
+                <!-- 4. Jabón de baño -->
+                <div class="card">
+                    <img src="fotos/jabon.jpg" alt="Jabón de baño" class="prod-img">
+                    <h3>Jabón de baño</h3>
+                    <p>Jabón delicado para el cuidado e hidratación diaria de la piel.</p>
+                    <p class="precio">Precio: 200 CUP</p>
+                    <p class="stock in">Disponibles</p>
+                    <a href="#carrito" class="btn-shop">Añadir al Carrito</a>
+                </div>
+
+                <!-- 5. Aceite -->
+                <div class="card">
+                    <img src="fotos/aceite.jpg" alt="Aceite" class="prod-img">
+                    <h3>Aceite vegetal</h3>
+                    <p>Aceite ideal para cocinar tus comidas diarias de forma saludable.</p>
+                    <p class="precio">Precio: 1800 CUP</p>
+                    <p class="stock in">Disponibles</p>
+                    <a href="#carrito" class="btn-shop">Añadir al Carrito</a>
+                </div>
+
+                <!-- 6. Botella de puré -->
+                <div class="card">
+                    <img src="fotos/pure.jpg" alt="Botella de puré" class="prod-img">
+                    <h3>Botella de puré</h3>
+                    <p>Puré de tomate concentrado, perfecto para darle sazón y color a tus platos.</p>
+                    <p class="precio">Precio: 120 CUP</p>
+                    <p class="stock in">Disponibles</p>
+                    <a href="#carrito" class="btn-shop">Añadir al Carrito</a>
+                </div>
+
+                <!-- 7. La libra de sal -->
+                <div class="card">
+                    <img src="fotos/sal.jpg" alt="La libra de sal" class="prod-img">
+                    <h3>Libra de sal</h3>
+                    <p>Sal fina de mesa indispensable para el condimento diario de tus recetas.</p>
+                    <p class="precio">Precio: 230 CUP</p>
+                    <p class="stock in">Disponibles</p>
+                    <a href="#carrito" class="btn-shop">Añadir al Carrito</a>
+                </div>
+
+                <!-- 8. Pasta dental -->
+                <div class="card">
+                    <img src="fotos/pastadental.jpg" alt="Pasta dental" class="prod-img">
+                    <h3>Pasta dental</h3>
+                    <p>Protección anticaries y frescura duradera para la higiene bucal de la familia.</p>
+                    <p class="precio">Precio: 500 CUP</p>
+                    <p class="stock in">Disponibles</p>
+                    <a href="#carrito" class="btn-shop">Añadir al Carrito</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN COMBOS Y OFERTAS INDEPENDIENTE -->
+        <section id="combos" class="seccion-independiente">
+            <h2>Combos y Ofertas Especiales</h2>
+            <div class="grid-productos">
+                <div class="card combo">
+                    <img src="https://via.placeholder.com/250x200" alt="Combo Ejemplo" class="prod-img">
+                    <h3>Combo Aseo Familiar</h3>
+                    <p>Incluye detergente, jabones y pasta dental a un precio súper económico.</p>
+                    <p class="precio">Precio Especial</p>
+                    <p class="stock in">Disponibles</p>
+                    <a href="#carrito" class="btn-shop">Comprar Combo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CARRITO Y ENTREGA INDEPENDIENTE -->
+        <section id="carrito" class="seccion-independiente form-container">
+            <h2>Tu Carrito de Compras</h2>
+            <form action="https://wa.me/5350354967" method="GET" target="_blank">
+                <p class="info-nota">Completa tus datos aquí debajo para enviar los detalles de tu pedido directamente al dueño por WhatsApp.</p>
+                <label>Dirección Completa de Entrega:</label>
+                <textarea name="text" required placeholder="Escribe tu dirección exacta, nombre y los productos que deseas pedir..."></textarea>
+                <button type="submit" class="btn-main">Enviar Pedido por WhatsApp</button>
+            </form>
+        </section>
+
+        <!-- SECCIÓN MENSAJERÍA INDEPENDIENTE -->
+        <section id="contacto" class="seccion-independiente">
+            <h2>Soporte y Mensajería Directa</h2>
+            <p>Si necesitas más información o atención personalizada, puedes escribirnos directamente a nuestros números de administración:</p>
+            <div class="contact-buttons">
+                <a href="https://wa.me/5350354967" class="btn-whatsapp" target="_blank">Administrador 1: +53 5035 4967</a>
+                <a href="https://wa.me/5359652309" class="btn-whatsapp" target="_blank">Administrador 2: +53 5965 2309</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN INVENTARIO INDEPENDIENTE -->
+        <section id="inventario" class="seccion-independiente form-container admin-section">
+            <h2>Gestión de Inventario (Agregar Productos)</h2>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <label>Nombre del Producto/Combo:</label>
+                <input type="text" required placeholder="Ej. Zapatos, Combo Alimentos...">
+                
+                <label>Descripción:</label>
+                <textarea required placeholder="Detalles, tallas, colores..."></textarea>
+                
+                <div class="row">
+                    <div>
+                        <label>Precio (CUP):</label>
+                        <input type="number" step="0.01" required>
+                    </div>
+                    <div>
+                        <label>Precio (USD):</label>
+                        <input type="number" step="0.01" required>
+                    </div>
+                </div>
+
+                <label>Cantidad en Existencia:</label>
+                <input type="number" required placeholder="Cantidad actual">
+
+                <label>Foto del Producto (Usa la cámara desde tu móvil):</label>
+                <input type="file" accept="image/*" required>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" value="1"> ¿Es un Combo / Oferta?
+                </label>
+
+                <button type="button" class="btn-admin" onclick="alert('Funcionalidad visual. Guardará tus productos cuando se asocie una base de datos.')">Simular Agregar Producto</button>
+            </form>
+        </section>
+
+        <!-- SECCIÓN ASIGNACIÓN DE TRABAJADORES INDEPENDIENTE -->
+        <section id="trabajadores" class="seccion-independiente form-container admin-section">
+            <h2>Asignar Trabajadores</h2>
+            <form action="#" method="POST">
+                <label>Nombre del Usuario:</label>
+                <input type="text" required placeholder="Ej. Carlos Martínez">
+
+                <label>Número de Teléfono:</label>
+                <input type="tel" required placeholder="Ej. +535XXXXXXX">
+
+                <label>Asignar Rol en la Tienda:</label>
+                <select required>
+                    <option value="trabajador">Trabajador (Gestión de Inventario)</option>
+                    <option value="administrador">Administrador (Acceso Total)</option>
+                </select>
+
+                <button type="button" class="btn-admin" onclick="alert('Trabajador asignado de forma visual.')">Asignar Rol</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA CON FRASE MOTIVACIONAL -->
+    <footer>
+        <p>"El éxito no es el final, el fracaso no es fatal: lo que cuenta es el coraje para continuar." — Gael Shop</p>
+    </footer>
+
+</body>
+</html>
