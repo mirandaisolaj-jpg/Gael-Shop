@@ -58,7 +58,7 @@ nav a:hover { color: white; }
 main { max-width: 1200px; margin: 40px auto; padding: 0 15px; min-height: 60vh; }
 
 /* ==========================================================================
-   LÓGICA DE EXCLUSIVIDAD ABSOLUTA (SISTEMA DE PESTAÑAS EN CSS PURO)
+   SISTEMA DE PESTAÑAS EN CSS PURO (EXCLUSIVIDAD)
    ========================================================================== */
 
 .seccion-independiente {
@@ -113,14 +113,23 @@ h2 { border-bottom: 2px solid var(--primary); padding-bottom: 8px; color: var(--
     text-align: center;
     background: #fff;
     transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .card:hover { transform: translateY(-5px); }
 .combo { border: 2px dashed var(--accent); }
 
-.prod-img { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; background-color: #eaeaea; }
-.precio { font-weight: bold; color: var(--accent); font-size: 1.2em; }
+.card form {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
-.stock { font-size: 0.9em; padding: 5px; display: inline-block; border-radius: 3px; font-weight: bold; }
+.prod-img { width: 100%; height: 200px; object-fit: cover; border-radius: 6px; background-color: #eaeaea; }
+.precio { font-weight: bold; color: var(--accent); font-size: 1.2em; margin: 10px 0; }
+
+.stock { font-size: 0.9em; padding: 5px; display: inline-block; border-radius: 3px; font-weight: bold; margin-bottom: 10px; }
 .stock.in { background: #d4edda; color: #155724; }
 .stock.out { background: #f8d7da; color: #721c24; }
 
@@ -136,7 +145,8 @@ h2 { border-bottom: 2px solid var(--primary); padding-bottom: 8px; color: var(--
     width: 100%;
     box-sizing: border-box;
 }
-.btn-shop { background: var(--primary); color: white; margin-top: 10px; }
+.btn-shop { background: var(--primary); color: white; margin-top: 5px; transition: background 0.2s; }
+.btn-shop:hover { background: var(--accent); }
 .btn-main { background: var(--accent); color: white; }
 .btn-admin { background: #8e44ad; color: white; }
 .btn-alert { color: #fff; background-color: rgba(255, 255, 255, 0.2); padding: 8px 12px; border-radius: 4px; text-decoration: none;}
@@ -153,7 +163,7 @@ form input, form textarea, form select {
 .checkbox-label { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; }
 
 .admin-section { border-left: 5px solid #8e44ad; }
-.info-nota { background-color: #e2e8f0; padding: 10px; border-radius: 5px; font-size: 0.9em; }
+.info-nota { background-color: #e2e8f0; padding: 10px; border-radius: 5px; font-size: 0.9em; margin-bottom: 15px; }
 
 footer {
     background: var(--dark);
